@@ -44,6 +44,7 @@ core/phpunit.xml
 
 
 # Ignore 
+sites/default/settings.php
 .sass-cache
 *.swp
 *.map
