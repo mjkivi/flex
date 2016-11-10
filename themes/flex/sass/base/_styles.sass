@@ -1,0 +1,378 @@
+// Custom styles.
+
+// First, let's add webfonts and create some font stacks.
+
+@import "https://fast.fonts.com/cssapi/a58e39be-56b2-4a98-a7eb-76d2609157b4.css";
+
+// $helvetica:             Helvetica, Arial, sans-serif;
+// $helvetica-light:       "Helvetica W01 Light", Helvetica, Arial, sans-serif;
+// $helvetica-ultralight:  "HelveticaNeueW01-Thin", "Helvetica W01 Light", Helvetica, Arial, sans-serif;
+// $helvetica-condensed:   "Helvetica W01 Light Cn", Helvetica, Arial, sans-serif;
+// $helvetica-bold:        "Helvetica® W01 Bold", Helvetica, Arial, sans-serif;
+$caecilia-light:        "PMNCaeciliaW01-45Light", Georgia, serif;
+$caecilia-light-italic: "PMNCaeciliaW01-46LightI", Georgia, serif;
+$caecilia-bold:         "PMNCaeciliaW01-75Bold", Georgia, serif;
+
+
+
+body 
+  background: url("../../images/optimized/sky-bg.jpg") fixed top center no-repeat !important;
+
+.site-name 
+  display: none;
+
+#header-region
+  margin-bottom: .5em;
+  margin-top: 4em;
+  background-color: #FDFDFD;
+  border: 1px solid #9d8b5a;
+  background-image: linear-gradient(#cfc7b0, #fff 28%, #fff 72%, #cfc7b0);
+  border-radius: 5px;
+  box-shadow: 0 1px 1px #483B42;
+
+  #block-flex-branding
+    float: left;
+    margin: -45px 0 20px 20px;
+
+  #block-centennialcelebration 
+    text-align: right;
+    margin: 0 20px 0 0;
+    h2
+      color: #9d8b5a;
+      font-family: "PMNCaeciliaW01-75Bold", Georgia, serif
+      font-size: 2em;
+      text-align: center;
+      @include media($medium) 
+        font-size: 3em; 
+        text-align: right;
+
+  #block-flex-main-menu
+    text-align: right;
+    margin: 0 20px 10px 0;
+    display: none;
+
+    @include media($medium) 
+      display: block;   
+
+    ul 
+      li
+        display: inline-block;
+        margin: 0 0 0 10px;
+        font-size: .8em;
+
+#block-flex-page-title 
+  display: none;
+
+article.node
+  .content 
+    overflow: visible;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+
+    .article__field_body 
+      width: 90%;
+      float: left;
+      margin-left: 20px;
+
+      @include media($desktop2) 
+        width: 55%;     
+      
+      .video-container
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+        
+        @include media($medium) 
+          position: relative;
+          padding-bottom: 0;
+          padding-top: 0;
+          height: 370px;  
+      
+        iframe 
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 95%;
+          height: 95%;
+
+          @include media($medium) 
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 655px;
+            height: 371px;
+
+
+      h1
+        color: #FFF;
+        font-size: 3em; 
+        text-shadow: 2px 2px #0075BE;
+        margin: 0 0 .1em;
+      h2
+        color: #FFF;
+      p 
+        color: #FFF;
+
+    .article__field_instructions
+      width: 100%;
+      min-height: 660px;
+      position: relative;
+      float: left;
+      display: table-cell;
+      vertical-align: bottom;
+      background: url("../../images/optimized/flex.png") top center no-repeat;
+      margin: 20px 0;
+
+      @include media($desktop2) 
+          width: 40%;
+          margin: 0;
+    
+      div.list 
+        position: absolute;
+        bottom: 13px;
+        width: 100%;
+
+        div.first, div.second, div.third
+          background: rgba(34, 111, 193, .9);
+          margin: 3px 0;
+          color: #FFF;
+          list-style-type: normal;
+          overflow: auto;
+          width: 100%;
+          vertical-align: middle;
+          img 
+            float: left;
+            width: 94px;
+            margin-right: 10px;
+          .text 
+            background: none;
+            margin-top: 20px;
+
+#block-someofourfavorites
+  margin: 20px 0 0 0;
+  text-align: center;
+  h2 
+    text-align: center;
+    color: #444;
+    font-size: 1.5em;
+    margin-bottom: -15px;
+  div:not(.contextual):not(.quickedit-field)
+    display: inline-block;
+    margin: 10px 5px 10px 0;
+    position: relative;
+    img 
+      border: 1px solid #0075BE;
+      margin: 20px 0 0 0;
+      @include media($mobile) 
+        margin: 0;
+    .caption
+      position: absolute;
+      left: 0; 
+      bottom: -35px;
+
+#block-thismonthschallenge 
+  background: #d0433a;
+  width: 100%;
+  min-height: 702px;
+  margin: 50px 0 0 0;
+
+  //div
+    //border: 1px solid green;
+
+  @include media($desktop) 
+    background: url("../../images/optimized/red-stripes.png") top center repeat-x;
+
+  h2
+    width: 100%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 5px auto 0;
+    color: #FFF;
+    font-size: 1.6em;
+    line-height: 1.6em;
+
+    @include media($mobile) 
+      font-size: 2.2em;
+      line-height: 1.8em;
+
+  div.block_inner
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #FFF;
+
+  div.print_this
+    width: 100%;
+    background: #b8342b;
+    display: inline-block;
+    
+    @include media($desktop) 
+      background: none;
+      overflow: auto;
+      display: block;
+
+    div:first-child
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      float: left;
+      width: 92%;
+      margin: 15px 0 0 25px;
+
+      @include media($desktop) 
+        font-size: 4.5em;
+        margin: 25px 0 0 25px;
+        width: 500px;
+
+    div:nth-child(2)
+      margin: 0 0 0 25px;
+      float: left;
+      width: 92%;
+
+      @include media($desktop)   
+        width: 500px;      
+        margin: 53px 0 0 0;
+
+      h3 
+        margin: 0 0 2px;
+
+  div.do_this
+    width: 100%;
+    display: inline-block;
+    
+    @include media($desktop) 
+      background: none;
+      overflow: auto;
+      display: block;
+
+    div:first-child
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      float: left;
+      width: 92%;
+      margin: 15px 0 0 25px;
+
+      @include media($desktop) 
+        font-size: 4.5em;
+        margin: 65px 0 0 25px;
+        width: 500px;
+    
+    div:nth-child(2)
+      margin: 0 0 0 25px;
+      float: left;
+      width: 92%;
+
+      @include media($desktop)   
+        width: 500px;      
+        margin: 73px 0 0 0;
+
+      h3 
+        margin: 0 0 2px;
+
+  div.win_this
+    width: 100%;
+    background: #b8342b;
+    display: inline-block;
+
+    @include media($desktop) 
+      background: none;
+      overflow: auto;
+      display: block;
+
+    div:first-child
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      float: left;
+      width: 92%; 
+      margin: 15px 0 0 25px;
+
+      @include media($desktop) 
+        font-size: 4.5em;
+        margin: 40px 0 0 25px;
+        width: 500px;
+
+    div:nth-child(2)
+      margin: 0 0 0 25px;
+      float: left;
+      width: 92%;
+
+      @include media($desktop)   
+        width: 500px;      
+        margin: 35px 0 0 0;
+
+      h3 
+        margin: 0 0 2px;
+
+  div.sneak_preview
+    width: 100%;
+    display: inline-block;
+
+    @include media($desktop) 
+      background: none;
+      overflow: auto;
+      display: block;
+
+    div:first-child
+      font-size: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+      float: left;
+      width: 92%;
+      margin: 15px 0 0 25px;
+
+      @include media($desktop) 
+        width: 500px;  
+        margin: 50px 0 0 25px; 
+
+    div:nth-child(2)
+      margin: 0 0 20px 25px;
+      float: left;
+      width: 92%;
+
+      @include media($desktop)   
+        width: 500px;      
+        margin: 45px 0 0 0;
+
+    h3
+      margin: 0 0 2px;
+
+#block-tagboard 
+  margin: 20px 0 0 0;
+  h2
+    width: 100%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 5px auto 0;
+    color: #444;
+    font-size: 2.2em;
+    line-height: 1.8em;
+  div.tagboard-embed
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #FFF;
+
+#header
+    background: none !important;
+
+#footer
+    background: #000 !important;
+
+// Responsive Menu
+#block-responsivemenumobileicon 
+  position: absolute;
+  top: -55px;
+  right: 0;
+  .label 
+    display: none;
+
+#mm-0
+  background: none;
+
+.mm-panel
+  .mm-title
+    display: none;
+
