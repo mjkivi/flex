@@ -833,7 +833,6 @@ article.node .content {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
-  overflow: auto;
 }
 
 article.node .content .article__field_body {
@@ -943,6 +942,28 @@ article.node .content .article__field_instructions div.list div.first .text, art
   margin-top: 20px;
 }
 
+#block-rulesandregulations {
+  margin: 0 auto;
+  overflow: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+#block-rulesandregulations a.flex-rules {
+  float: right;
+  background: #175fb7;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 2px 10px 0 0;
+}
+
+@media screen and (min-width: 400px) {
+  #block-rulesandregulations a.flex-rules {
+    margin: 10px 40px 0 0;
+  }
+}
+
 #block-someofourfavorites {
   margin: 20px 0 0 0;
   text-align: center;
@@ -1018,13 +1039,15 @@ article.node .content .article__field_instructions div.list div.first .text, art
   width: 100%;
   background: #b8342b;
   display: inline-block;
+  position: relative;
 }
 
 @media screen and (min-width: 1040px) {
   #block-thismonthschallenge div.print_this {
     background: none;
-    overflow: auto;
+    overflow: visible;
     display: block;
+    position: relative;
   }
 }
 
@@ -1055,6 +1078,18 @@ article.node .content .article__field_instructions div.list div.first .text, art
   #block-thismonthschallenge div.print_this div:nth-child(2) {
     width: 500px;
     margin: 53px 0 0 0;
+  }
+}
+
+#block-thismonthschallenge div.print_this div:nth-child(2) a.flex-btn {
+  position: relative;
+}
+
+@media screen and (min-width: 850px) {
+  #block-thismonthschallenge div.print_this div:nth-child(2) a.flex-btn {
+    position: absolute;
+    right: 0;
+    top: -30px;
   }
 }
 

@@ -69,7 +69,7 @@ article.node
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
-    overflow: auto;
+
 
     .article__field_body 
       width: 90%;
@@ -151,6 +151,23 @@ article.node
             background: none;
             margin-top: 20px;
 
+#block-rulesandregulations
+  margin: 0 auto;
+  overflow: auto;
+  width: 100%;
+  max-width: 1200px;
+
+  a.flex-rules
+    float: right;
+    background: #175fb7;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 2px 10px 0 0;
+
+    @include media($mobile) 
+      margin: 10px 40px 0 0;
+
 #block-someofourfavorites
   margin: 20px 0 0 0;
   text-align: center;
@@ -207,11 +224,13 @@ article.node
     width: 100%;
     background: #b8342b;
     display: inline-block;
+    position: relative;
     
     @include media($desktop) 
       background: none;
-      overflow: auto;
+      overflow: visible;
       display: block;
+      position: relative;
 
     div:first-child
       font-size: 2em;
@@ -234,6 +253,14 @@ article.node
       @include media($desktop)   
         width: 500px;      
         margin: 53px 0 0 0;
+
+      a.flex-btn 
+        position: relative;
+
+        @include media($tablet)   
+          position: absolute;
+          right: 0;
+          top: -30px;
 
       h3 
         margin: 0 0 2px;
