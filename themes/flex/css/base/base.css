@@ -1136,7 +1136,7 @@ article.node .content .article__field_instructions div.list div.first .text, art
 @media screen and (min-width: 1040px) {
   #block-thismonthschallenge div.do_this div:nth-child(2) {
     width: 500px;
-    margin: 73px 0 0 0;
+    margin: 53px 0 0 0;
   }
 }
 
@@ -1170,7 +1170,7 @@ article.node .content .article__field_instructions div.list div.first .text, art
 @media screen and (min-width: 1040px) {
   #block-thismonthschallenge div.win_this div:first-child {
     font-size: 4.5em;
-    margin: 40px 0 0 25px;
+    margin: 37px 0 0 25px;
     width: 500px;
   }
 }
@@ -1230,7 +1230,7 @@ article.node .content .article__field_instructions div.list div.first .text, art
 @media screen and (min-width: 1040px) {
   #block-thismonthschallenge div.sneak_preview div:nth-child(2) {
     width: 500px;
-    margin: 45px 0 0 0;
+    margin: 35px 0 0 0;
   }
 }
 
