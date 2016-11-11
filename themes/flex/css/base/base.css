@@ -1284,4 +1284,9 @@ article.node .content .article__field_instructions div.list div.first .text, art
   display: none;
 }
 
+#block-flex-local-tasks {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=base.css.map */
