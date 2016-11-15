@@ -1296,9 +1296,6 @@ body.page-node-2 .article__field_body {
   width: 100% !important;
   padding: 20px 40px !important;
   margin: 0 0 30px 0 !important;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
