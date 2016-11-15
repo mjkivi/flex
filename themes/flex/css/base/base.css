@@ -1289,7 +1289,8 @@ article.node .content .article__field_instructions div.list div.first .text, art
   margin: 0 auto;
 }
 
-body.page-node-2 .article__field_body {
+body.page-node-2 .article__field_body,
+body.page-rules-and-regulations .article__field_body {
   background: rgba(34, 111, 193, 0.85);
   color: #fff;
   border: 2px solid #0075BE;
@@ -1301,27 +1302,32 @@ body.page-node-2 .article__field_body {
 }
 
 @media screen and (min-width: 1265px) {
-  body.page-node-2 .article__field_body {
+  body.page-node-2 .article__field_body,
+  body.page-rules-and-regulations .article__field_body {
     width: 100% !important;
     padding: 20px 40px !important;
     margin-left: 0 !important;
   }
 }
 
-body.page-node-2 .article__field_body h2 {
+body.page-node-2 .article__field_body h2,
+body.page-rules-and-regulations .article__field_body h2 {
   color: #fff !important;
   font-size: 2.3em;
 }
 
-body.page-node-2 .article__field_body h3 {
+body.page-node-2 .article__field_body h3,
+body.page-rules-and-regulations .article__field_body h3 {
   color: #fff !important;
 }
 
-body.page-node-2 .article__field_body p {
+body.page-node-2 .article__field_body p,
+body.page-rules-and-regulations .article__field_body p {
   color: #fff !important;
 }
 
-body.page-node-2 .article__field_body a {
+body.page-node-2 .article__field_body a,
+body.page-rules-and-regulations .article__field_body a {
   text-decoration: underline;
   color: #fff;
   font-weight: bold;
