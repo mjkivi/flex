@@ -780,6 +780,7 @@ body {
   background-image: linear-gradient(#cfc7b0, #fff 28%, #fff 72%, #cfc7b0);
   border-radius: 5px;
   box-shadow: 0 1px 1px #483B42;
+  position: relative;
 }
 
 #header-region #block-flex-branding {
@@ -947,6 +948,12 @@ article.node .content .article__field_instructions div.list div.first img, artic
 article.node .content .article__field_instructions div.list div.first .text, article.node .content .article__field_instructions div.list div.second .text, article.node .content .article__field_instructions div.list div.third .text {
   background: none;
   margin-top: 20px;
+}
+
+#block-timelinelink {
+  position: absolute;
+  right: 12px;
+  margin-top: 1px;
 }
 
 #block-rulesandregulations {
