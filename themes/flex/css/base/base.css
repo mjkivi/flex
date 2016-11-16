@@ -823,7 +823,12 @@ body {
 #header-region #block-flex-main-menu ul li {
   display: inline-block;
   margin: 0 0 0 10px;
-  font-size: .8em;
+  font-size: .86em;
+  font-weight: bold;
+}
+
+#header-region #block-flex-main-menu ul li a {
+  color: #483b42;
 }
 
 #block-flex-page-title {
