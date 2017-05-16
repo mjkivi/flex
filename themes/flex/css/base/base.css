@@ -954,7 +954,7 @@ article.node .content .article__field_instructions div.list div.first .text, art
 #block-timelinelink {
   position: absolute;
   right: 12px;
-  margin-top: 1px;
+  top: 154px;
 }
 
 #block-rulesandregulations {
